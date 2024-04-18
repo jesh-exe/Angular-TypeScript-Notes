@@ -1,0 +1,40 @@
+<div class="text-center mt-5 display-6">
+  Directives
+</div>
+
+<div class="lead m-5">
+  There are 2 types of Directives
+  <ul>
+    <li>Structural Directives</li>
+    <li>Attribute Directives</li>
+  </ul>
+</div>
+
+<div class="lead m-5">
+  Structural Directives
+  <ol>
+    <li>*ngIf</li>
+    <li>*ngFor</li>
+    <li>*ngSwitch</li>
+    <li>ngClass</li>
+    <li>ngStyle</li>
+  </ol>
+</div>
+
+<div class="lead m-5">
+  
+  <!-- Conditional Rendering -->
+  {{ roomAvailable==true ? "Room is Available" : "Room is Not Available" }}
+  <br>
+
+  <div (click)="roomAvailable = !roomAvailable" class="btn btn-primary btn-sm rounded-pill">
+    Change Status
+  </div>
+
+  <!-- This is use of Structural Directives, to render things, but the problem is we cant give another -->
+  <div *ngIf="roomAvailable == true">
+    Room is Available
+  </div>
+
+
+</div>
