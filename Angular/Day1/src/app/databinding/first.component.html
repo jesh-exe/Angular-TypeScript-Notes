@@ -1,0 +1,23 @@
+
+<!-- Data Binding by Interpolation -->
+<div class="display-6 text-center mt-5 pt-5">
+  First Component Loaded and Working - {{details.address}}
+</div>
+
+<!-- Data Binding by Property Binding -->
+<div [innerText]="details.name" class="display-6 text-center ">
+
+</div>
+
+
+<!-- Event Binding -->
+<div class="text-center mt-5">
+  <!-- This is the event handling in the Angular -->
+  <!-- We need to add () before and after every event so that angular can detect it -->
+  <!-- The Function is written in ts file of the specific component -->
+  <div class="btn btn-lg btn-primary" (click)="handleClick()"> 
+    Click Me
+  </div>
+</div>
+
+

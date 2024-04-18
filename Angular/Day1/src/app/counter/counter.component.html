@@ -1,0 +1,19 @@
+<div class="text-center">
+  <div class="display-6 text-primary my-5">Counter App</div>
+  <div class="m-5 d-flex justify-content-center">
+    <div (click)="decreaseCounter()" class="px-3 rounded-circle btn btn-danger">
+      -
+    </div>
+
+    <div class="lead mx-5">
+      Counter - {{counter}}
+    </div>
+
+    <div (click)="increaseCounter()" class="px-3 rounded-circle btn btn-success">
+      +
+    </div>
+  </div>
+  <div class="lead">
+    {{counter > 10 ? "Jayesh" : "Arpit"}}
+  </div>
+</div>

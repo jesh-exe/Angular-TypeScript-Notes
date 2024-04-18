@@ -1,0 +1,12 @@
+<div class="my-5 text-center">
+
+  <!-- click event will change the value of the boolean attribute set in the ts file eventually hiding and showing the below div-->
+  <div (click)="toggleHidden()" class="btn btn-primary">
+    Toggle
+  </div>
+
+  <!-- hidden is the property which takes true or false as the value -->
+  <div [hidden]="isHidden" class="mt-3 border p-4 bg-success lead text-white">
+    This Section is meant for Toggle (Hide/Show).
+  </div>
+</div>
