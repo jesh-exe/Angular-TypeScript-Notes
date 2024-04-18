@@ -1,0 +1,10 @@
+To avoid username and password everytime we try to push
+We need to add the SSH key in out github
+
+To get the SSH key, we use terminal 'ssh-keygen'
+then the Public and Private Key is generated
+
+Save that SSH Public Key in the Github
+
+Then change the remote origin path of the Repository if already added
+Example -> git remote set-url origin git+ssh://git@github.com/jesh-exe/repositoryname
