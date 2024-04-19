@@ -1,0 +1,29 @@
+<div class="display-6 fs-4 text-center">
+  Room List
+</div>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Room No</th>
+        <th>Type</th>
+        <th>Price</th>
+        <th>Ammenities</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--ngFor to iterate over the list of Room-->
+      <tr *ngFor="let room of rooms; index as i; let e=even; let o=odd">
+        <td>{{room.no}}</td>
+        <td>{{room.type}}</td>
+        <td>{{room.price}}</td>
+        <td>{{room.ammenities}}</td>
+        <!--ngClass directive to give a conditional classes-->
+        <td>
+          <button class="btn btn-outline-success" (click)="selectedRoom(room)" >Book</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,28 @@
+<div class="m-5">
+  <div class="display-6 text-center">Room Reservation System</div>
+  <div class="lead my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 text-center p-4">
+          <div class="rounded">
+            <div class="display-6 fs-4">Book Room Detail</div>
+            <div>
+              {{ selectedRoom | json }}
+            </div>
+              
+          </div>
+        </div>
+
+        <div class="col-12 col-md-8 p-4">
+          <div class="">
+            <!-- Binding the Data from PARENT to the CHILD, but before that we need to mention it in the child compinent that it is the parameter coming from the parenbt -->
+            <!-- Binding the data from CHILD to PARENT and we use () braces for c->p -->
+            <!-- $event takes the data in it from the child component -->
+            <app-room-list [rooms]="roomList" (room)="selectedRoomFromChild($event)"></app-room-list>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

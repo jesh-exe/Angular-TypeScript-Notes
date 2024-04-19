@@ -22,19 +22,56 @@
 </div>
 
 <div class="lead m-5">
-  
   <!-- Conditional Rendering -->
+  <!-- Same as Reactjs just write it in double curly brackets -->
   {{ roomAvailable==true ? "Room is Available" : "Room is Not Available" }}
   <br>
 
+  <!-- We can directly change the value of the attribute from here itself, noo need to write the separate function for it -->
   <div (click)="roomAvailable = !roomAvailable" class="btn btn-primary btn-sm rounded-pill">
     Change Status
   </div>
 
-  <!-- This is use of Structural Directives, to render things, but the problem is we cant give another -->
+
+  <!-- ngIf -->
+  <!-- This is use of Structural Directives, to render things, but the problem is we cant give alternate condition-->
   <div *ngIf="roomAvailable == true">
     Room is Available
   </div>
 
+
+  <!-- ngFor -->
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Room No</th>
+          <th>Type</th>
+          <th>Price</th>
+          <th>Ammenities</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- ngFor to iterate over the list of Rooom -->
+        <tr *ngFor="let room of rooms; index as i; let e=even; let o=odd">
+          <td>{{room.roomNo}}</td>
+          <td>{{room.roomType}}</td>
+          <td>{{room.price}}</td>
+          <td>{{room.ammenities}}</td>
+
+          <!-- ngClass directive to give a conditional classes -->
+          <td [ngClass]="room.status == 'Available' ? 'text-success' : 'text-danger'">
+            <div class="form-check form-switch">
+
+              <!-- Sending the index of the object of which status need to be changed -->
+              <input class="form-check-input" type="checkbox" id="status" (click)="handleStatusChange(i)">
+              <label class="form-check-label" for="status">{{room.status}}</label>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
 </div>
