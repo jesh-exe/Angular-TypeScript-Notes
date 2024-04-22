@@ -1,0 +1,23 @@
+
+Day 1
+* Directives
+* Basic Syntax
+* Component Creation
+
+Day 2
+* Pipes
+* LifeCycle Hooks
+    1. ngOnInit
+    2. ngOnChanges (When the state is changed)
+    3. ngDoCheck (Called whenever event occurs anywhere, Costly Not Recommended)
+    4. ngAfterViewInit
+* ViewChild (To access data of Component in other ones)
+* Input and Output for Component Communication with Emit
+* ChangeDetectionStrategy
+
+Day 3
+* Dynamic Loading of Components (Not of Use)
+* ngContent (Container/Layout)
+* LifeCycle Hooks
+    5. ngAfterContentInit
+* Dependency Injection (Important and Powerful)
