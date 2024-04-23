@@ -1,4 +1,3 @@
-
 Day 1
 * Directives
 * Basic Syntax
@@ -20,4 +19,12 @@ Day 3
 * ngContent (Container/Layout)
 * LifeCycle Hooks
     5. ngAfterContentInit
+
+Day4
 * Dependency Injection (Important and Powerful)
+* Resolution Modifiers
+    1. Self
+    2. Optional 
+    3. Host
+* Value Providers (App-Config Example)
+* Local Storage

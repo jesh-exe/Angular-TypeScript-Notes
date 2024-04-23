@@ -1,0 +1,14 @@
+<div class="display-6 text-center text-primary my-5">
+  Room Reservation
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-4">
+      Room Details
+    </div>
+    <div class="col-12 col-sm-8">
+      <app-room-list [rooms]="roomList" (room)="addRoom($event)" ></app-room-list>
+    </div>
+  </div>
+</div>
