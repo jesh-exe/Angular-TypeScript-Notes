@@ -15,16 +15,23 @@ Day 2
 * ChangeDetectionStrategy
 
 Day 3
-* Dynamic Loading of Components (Not of Use)
-* ngContent (Container/Layout)
-* LifeCycle Hooks
+* Dynamic Loading of Components (Not of Use).
+* ngContent (Container/Layout).
+* LifeCycle Hooks.
     5. ngAfterContentInit
 
 Day4
-* Dependency Injection (Important and Powerful)
+* Dependency Injection (Important and Powerful).
 * Resolution Modifiers
     1. Self
     2. Optional 
     3. Host
-* Value Providers (App-Config Example)
-* Local Storage
+* Value Providers (App-Config Example).
+* Local Storage.
+
+Day 5 (Day 4 Folder Only)
+* HttpClientModule GET,POST,PUT,DELETE,PATCH Methods,
+* Observables and RxJs.
+* HTTP Request.
+* Subscribe Unsubscribe.
+* Http Interceptors.

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiEndpoint : "https://dummyjson.com/recipes?limit=50"
+  apiEndpoint : "https://dummyjson.com/recipes"
 };
 
 /*
