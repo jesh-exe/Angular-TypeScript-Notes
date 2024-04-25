@@ -1,7 +1,7 @@
 Day 1
 * Directives
 * Basic Syntax
-* Component Creation
+* Component Creation / Communication
 
 Day 2
 * Pipes
@@ -35,3 +35,10 @@ Day 5 (Day 4 Folder Only)
 * HTTP Request.
 * Subscribe Unsubscribe.
 * Http Interceptors.
+* App Initializer
+
+Day 6 (Routing)
+* Route Setup (route.module)
+* Simple Routes (routerLink)
+* Dynamic Routes (with id)
+* Wild Card Routes (404 Page where path="**")
