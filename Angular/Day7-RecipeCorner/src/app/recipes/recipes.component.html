@@ -8,7 +8,7 @@
         <div class="row my-5 blur px-4 rounded border">
             <div class="text-center display-5 my-4">List of All Recipes</div>
             <div class="my-3 text-center">
-                <button class="btn btn-success" (click)="addRecipe()">Add Recipe</button>
+                <button class="btn btn-success" [routerLink]="'add'">Add The Recipe</button>
             </div>
             <app-recipe-card [recipeList]="recipeList"></app-recipe-card>
         </div>
