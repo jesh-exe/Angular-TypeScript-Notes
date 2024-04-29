@@ -4,13 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class RecipeRequestDto {
-
+	private Integer id;
 	private String name;
 	private String ingredients;
 	private String instructions;
@@ -23,5 +25,5 @@ public class RecipeRequestDto {
 	private String tags;
 	private String image;
 	private double rating;
-	
+
 }

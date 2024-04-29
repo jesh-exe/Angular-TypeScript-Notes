@@ -10,7 +10,7 @@ import { Recipe } from '../Recipe.interface';
 })
 export class RecipesService {
 
-  recipes$ = this.http.get<Recipe[]>(this.config.apiEndpoint + "?limit=100", {
+  recipes$ = this.http.get<Recipe[]>(this.config.apiEndpoint, {
 
     // We can add Header by Custom means too
     // Also to add more, we need to use Append Method 
@@ -33,7 +33,7 @@ export class RecipesService {
 
     // Using the Http Client to get the request and response from the API
     // We need to provide the Interface of which type the data is going to be received from the backend or the API
-    return this.http.get<Recipe[]>(this.config.apiEndpoint + "?limit=100", {
+    return this.http.get<Recipe[]>(this.config.apiEndpoint , {
       headers: new HttpHeaders({
         "token": "rkfjtoiewfksnkjfnr W3N42J323 RM23OJR5H32O4ITHJ34 GKERNV3OKJ4TNGRFJND"
       }).append("Jesh", "Asdasdas")
@@ -46,7 +46,17 @@ export class RecipesService {
   }
 
   addRecipe(recipe: Recipe) {
-    return this.http.post<Recipe[]>(this.config.apiEndpoint + "/add", recipe);
+    return this.http.post<Recipe[]>(this.config.apiEndpoint + "/add", recipe) ;
+  }
+
+  updateRecipe(recipe: Recipe)
+  {
+    return this.http.put<Recipe[]>(this.config.apiEndpoint, recipe);
+  }
+
+  deleteRecipe(id)
+  {
+    return this.http.delete<Recipe[]>(this.config.apiEndpoint + "/" + id);
   }
 
 }

@@ -7,9 +7,16 @@ import com.recipe.entity.Recipe;
 
 public interface RecipeService {
 
-	String addRecipes(List<RecipeRequestDto> recipes);
-	String addRecipe(RecipeRequestDto recipeDto);
+	List<Recipe> addRecipes(List<RecipeRequestDto> recipes);
+
+	List<Recipe> addRecipe(RecipeRequestDto recipeDto);
+
 	Recipe getRecipe(Integer id);
+
 	List<Recipe> getAllRecipes();
-	
+
+	List<Recipe> deleteRecipe(Integer id);
+
+	List<Recipe> updateRecipe(RecipeRequestDto recipeRequestDto);
+
 }
