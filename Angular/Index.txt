@@ -47,3 +47,16 @@ Day 7
 * Form Binding using ngModel
 * Form Validations
 * Form Errors
+
+
+Day 8
+* Backend for Recipe Corner Up and Running
+* Frontend CRUD Operations Done
+
+Day 9
+* Routing Guards
+    1. canActivate
+    2. canActivateChild
+    3. canDeactivate
+    4. can Load
+    5. Resolve
