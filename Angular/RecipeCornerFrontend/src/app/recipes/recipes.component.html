@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-center align-items-center h-75" *ngIf="recipeListService.recipeList == null || recipeListService.recipeList == undefined">
+    <div class="spinner-grow text-success" role="status">
+    </div>
+</div>
+
+<div class="container" [hidden]="!listLoaded">
+    <div class="img-holder">
+        <div class="row my-5 blur px-4 rounded border">
+            <div class="text-center display-5 my-4">List of All Recipes</div>
+            <app-recipe-card [recipeList]="recipeListService.recipeList" [isOwner]=false ></app-recipe-card>
+        </div>
+    </div>
+</div>
