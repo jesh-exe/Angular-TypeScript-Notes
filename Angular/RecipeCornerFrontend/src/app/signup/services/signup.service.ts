@@ -12,7 +12,7 @@ export class SignupService {
   signUpUser(userData)
   {
     return this.http.post<any>(this.config.apiEndpoint + "/user", userData
-    , { responseType: 'text' }
+    // , { responseType: 'text' }
     );
   }
 
