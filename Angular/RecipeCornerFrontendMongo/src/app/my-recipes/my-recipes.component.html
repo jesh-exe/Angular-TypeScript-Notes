@@ -1,0 +1,4 @@
+<div class="container">
+  <div class="text-center display-5 text-primary my-5">My Recipes</div>
+  <app-recipe-card [recipeList]="user.myRecipes" [isOwner]=true (recipeToDelete)="deleteRecipe($event)"></app-recipe-card>
+</div>

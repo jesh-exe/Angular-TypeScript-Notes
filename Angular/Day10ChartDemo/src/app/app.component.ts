@@ -23,8 +23,8 @@ export class AppComponent {
       title: {
         text: "Ice Cream Sales"
       },
-      height: 500 as PixelSize,
-      width: 1000 as PixelSize,
+      // height: 500 as PixelSize,
+      // width: 1000 as PixelSize,
       data: [
         { month: "JAN", avgTemp: 2.3, iceCreamSales: 162000 },
         { month: "FEB", avgTemp: 5.7, iceCreamSales: 106000 },

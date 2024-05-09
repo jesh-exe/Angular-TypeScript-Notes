@@ -1,1 +1,16 @@
-<ag-charts-angular [options]="chartOptions"></ag-charts-angular>
+<div class="container-fluid my-5">
+    <div class="row">
+        <div  class="col-12 col-md-6 my-4">
+            <app-bar-chart></app-bar-chart>
+        </div>
+        <div  class="col-12 col-md-6 my-4">
+            <app-pie-chart></app-pie-chart>
+        </div>
+        <div  class="col-12 col-md-6 my-4">
+            <app-line-chart></app-line-chart>
+        </div>
+        <div  class="col-12 col-md-6 my-4 ">
+            <ag-charts-angular [options]="chartOptions"></ag-charts-angular>
+        </div>
+    </div>
+</div>
