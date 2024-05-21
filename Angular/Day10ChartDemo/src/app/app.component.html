@@ -14,3 +14,144 @@
         </div>
     </div>
 </div>
+
+<div class="container-fluid my-5">
+    <div class="row">
+        <div class="col-12 offset-md-1 col-md-2 my-4">
+            <app-total-users-pie></app-total-users-pie>
+        </div>
+        <div class="col-12 col-md-2 my-4">
+            <app-total-storage-pie></app-total-storage-pie>
+        </div>
+        <div class="col-12 col-md-2 my-4">
+            <app-total-container-pie></app-total-container-pie>
+        </div>
+        <div class="col-12 col-md-2 my-4 ">
+            <app-total-users-pie></app-total-users-pie>
+        </div>
+        <div class="col-12 col-md-2 my-4 ">
+            <app-total-container-pie></app-total-container-pie>
+        </div>
+    </div>
+
+
+    <div class="row my-5">
+        <div class="col-12 col-md-7 my-3">
+            <app-user-charts></app-user-charts>
+        </div>
+
+        <div class="col-12 col-md-5 my-3">
+            <div class=" bg-light rounded-2 border performance-holder">
+                <div class="row">
+                    <div class="text-center pb-0 display-6 fs-3 pt-4">System Performance</div>
+                    <div class="col-12 col-md-4">
+                        <div style="width: 100%; height: 40%;">
+                            <app-cpu-guage></app-cpu-guage>
+                        </div>
+                        <div class="border mx-4 py-2 rounded-3">
+                            <div class="text-center lead">CPU</div>
+                            <div>
+                                <table align='center' cellpadding=5>
+                                    <tr>
+                                        <td align="left">Total</td>
+                                        <td>:</td>
+                                        <td align="right">100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">Used</td>
+                                        <td>:</td>
+                                        <td align="right">70%</td>
+                                    </tr>
+                                    <tr>    
+                                        <td align="left">Remaining</td>
+                                        <td>:</td>
+                                        <td align="right">30%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div style="width: 100%; height: 40%;">
+                            <app-cpu-guage></app-cpu-guage>
+                        </div>
+                        <div class="border mx-4 py-2 rounded-3">
+                            <div class="text-center lead">CPU</div>
+                            <div>
+                                <table align='center' cellpadding=5>
+                                    <tr>
+                                        <td align="left">Total</td>
+                                        <td>:</td>
+                                        <td align="right">100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">Used</td>
+                                        <td>:</td>
+                                        <td align="right">70%</td>
+                                    </tr>
+                                    <tr>    
+                                        <td align="left">Remaining</td>
+                                        <td>:</td>
+                                        <td align="right">30%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div style="width: 100%; height: 40%;">
+                            <app-cpu-guage></app-cpu-guage>
+                        </div>
+                        <div class="border mx-4 py-2 rounded-3">
+                            <div class="text-center lead">CPU</div>
+                            <div>
+                                <table align='center' cellpadding=5>
+                                    <tr>
+                                        <td align="left">Total</td>
+                                        <td>:</td>
+                                        <td align="right">100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">Used</td>
+                                        <td>:</td>
+                                        <td align="right">70%</td>
+                                    </tr>
+                                    <tr>    
+                                        <td align="left">Remaining</td>
+                                        <td>:</td>
+                                        <td align="right">30%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 my-3 ">
+            <div class=" bg-light rounded-2 border">
+                <div class="text-center pb-0 lead pt-4">Top 5 Uploads (MB)</div>
+                <app-top-uploads-bar></app-top-uploads-bar>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 my-3">
+            <div class=" bg-light rounded-2 border">
+                <div class="text-center pb-0 lead pt-4">Top 5 Downloads (MB)</div>
+                <app-top-downloads-bar></app-top-downloads-bar>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="row p-5 pt-0">
+        <div class="col-12 col-md-6">
+            <div class="m-4 bg-light rounded-2 border">
+                <div class="text-center pb-0 lead pt-4">Total Time Spent (Minutes)</div>
+            <app-time-spent-line></app-time-spent-line>
+            </div>
+        </div>
+    </div> -->
+
+
+
+</div>

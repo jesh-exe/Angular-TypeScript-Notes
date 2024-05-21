@@ -1,0 +1,62 @@
+Day 1
+* Directives
+* Basic Syntax
+* Component Creation / Communication
+
+Day 
+* Pipes
+* LifeCycle Hooks
+    1. ngOnInit
+    2. ngOnChanges (When the state is changed)
+    3. ngDoCheck (Called whenever event occurs anywhere, Costly Not Recommended)
+    4. ngAfterViewInit
+* ViewChild (To access data of Component in other ones)
+* Input and Output for Component Communication with Emit
+* ChangeDetectionStrategy
+
+Day 3
+* Dynamic Loading of Components (Not of Use).
+* ngContent (Container/Layout).
+* LifeCycle Hooks.
+    5. ngAfterContentInit
+
+Day4
+* Dependency Injection (Important and Powerful).
+* Resolution Modifiers
+    1. Self
+    2. Optional 
+    3. Host
+* Value Providers (App-Config Example).
+* Local Storage.
+
+Day 5 (Day 4 Folder Only)
+* HttpClientModule GET,POST,PUT,DELETE,PATCH Methods,
+* Observables and RxJs.
+* HTTP Request.
+* Subscribe Unsubscribe.
+* Http Interceptors.
+* App Initializer
+
+Day 6 (Routing)
+* Route Setup (route.module)
+* Simple Routes (routerLink)
+* Dynamic Routes (with id)
+* Wild Card Routes (404 Page where path="**")
+
+Day 7
+* Form Binding using ngModel
+* Form Validations
+* Form Errors
+
+
+Day 8
+* Backend for Recipe Corner Up and Running
+* Frontend CRUD Operations Done
+
+Day 9
+* Routing Guards
+    1. canActivate
+    2. canActivateChild
+    3. canDeactivate
+    4. can Load
+    5. Resolve

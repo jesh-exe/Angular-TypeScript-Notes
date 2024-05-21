@@ -12,7 +12,7 @@ import { RequestInterceptor } from './interceptors/request.interceptor';
 import { InitService } from './init.service';
 import { AppRoutingModule } from './app.routing.module';
 import { RouterModule } from '@angular/router';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { WelcomeComponent } from './welcome/welcome.component';RouterModule
 import { RecipeDataComponent } from './recipes/recipe-data/recipe-data.component';
 
 function initFactory(initService: InitService) {

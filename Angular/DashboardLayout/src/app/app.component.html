@@ -1,0 +1,279 @@
+<div class="container-fluid bg-light">
+  <!-- Row 1 -->
+  <div class="row mb-2">
+    <!-- Row 1 Left -->
+    <div class="col-12 col-lg-4 p-2">
+      <div class="bg-white shadow-sm border rounded-3 d-flex justify-content-between p-3 h-100">
+        <!-- Welcome -->
+        <div class="">
+          <div class="pt-5 ps-sm-3 display-6  text-primary">Welcome Admin</div>
+        </div>
+        <!--Medal Image -->
+        <div>
+          <img width="150" height="150" class="img-fluid" src="https://img.icons8.com/arcade/256/medal.png"
+            alt="medal" />
+        </div>
+      </div>
+    </div>
+    <!-- Row 1 Right -->
+    <div class="col-12 col-lg-8 p-2 ">
+      <!-- Statistics -->
+      <div class="bg-white shadow-sm border rounded-3 p-3 h-100">
+        <div class="display-6 fs-4 text-muted mt-2 ms-3">Statistics</div>
+        <!-- Stats Holder -->
+      
+         <div class="d-flex flex-wrap mt-4">
+
+          <div class="d-flex flex-fill p-3">
+            <img width="64" height="64" class="img-fluid mx-3" src="https://img.icons8.com/stickers/100/storage.png"
+              alt="storage" />
+            <div class="h-100 pt-2">
+              <div class="lead fw-bold pb-1 fs-6">100GB</div>
+              <div class="lead text-muted">Storage</div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-fill p-3">
+            <img width="64" height="64" class="img-fluid mx-3"
+              src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/external-users-user-interface-wanicon-lineal-color-wanicon.png"
+              alt="external-users-user-interface-wanicon-lineal-color-wanicon" />
+            <div class="h-100 pt-2">
+              <div class="lead fw-bold pb-1 fs-6">1458</div>
+              <div class="lead text-muted">Users</div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-fill p-3">
+            <img width="64" height="64" class="img-fluid mx-3"
+              src="https://img.icons8.com/external-those-icons-flat-those-icons/96/external-Docker-Logo-social-media-those-icons-flat-those-icons.png"
+              alt="external-Docker-Logo-social-media-those-icons-flat-those-icons" />
+            <div class="h-100 pt-2">
+              <div class="lead fw-bold pb-1 fs-6">786</div>
+              <div class="lead text-muted">Containers</div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-fill p-3">
+            <img width="64" height="64" class="img-fluid mx-3"
+              src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-cpu-computer-science-flaticons-flat-flat-icons.png"
+              alt="external-cpu-computer-science-flaticons-flat-flat-icons" />
+            <div class="h-100 pt-2">
+              <div class="lead fw-bold pb-1 fs-6">65%</div>
+              <div class="lead text-muted">CPU</div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-fill p-3">
+            <img width="64" height="64" class="img-fluid mx-3" src="https://img.icons8.com/arcade/64/pipeline.png"
+              alt="pipeline" />
+            <div class="h-100 pt-2">
+              <div class="lead fw-bold pb-1 fs-6">98</div>
+              <div class="lead text-muted">Pipelines</div>
+            </div>
+          </div>
+        </div> 
+        
+      
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="row mb-4">
+    <!-- Row 2 Left Side -->
+    <div class="col-12 col-lg-7">
+      <!-- Storage Chart -->
+      <div class="border rounded-3 p-3 bg-white h-100 shadow-sm">
+        <div class="d-flex flex-wrap justify-content-between mt-3 ms-3 mb-5">
+          <div class="display-6 text-success my-2">Storage Analysis</div>
+          <div class="my-2">
+            <div class="input-group">
+              <input type="text" placeholder="Enter Name" name="name" id="name" class="form-control">
+              <button class="btn btn-outline-danger rounded-start rounded-pill">Get Data</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Storage Bar Chart -->
+        <app-storage-chart></app-storage-chart>
+        <!-- Extra Details -->
+        <div class="row">
+          <div class="col-12 col-md-6 p-3">
+            <div class="lead fs-6 mb-2">Total Storage Used</div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-success" style="width: 65%">65%</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 p-3">
+            <div class="lead fs-6 mb-2">Total Pipeline Running</div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 p-3">
+            <div class="lead fs-6 mb-2">Total Containers Running</div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-warning" style="width: 55%">55%</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 p-3">
+            <div class="lead fs-6 mb-2">Total Analysis Completed</div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-primary" style="width: 80%">80%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2 Right Side -->
+    <div class="col-12 col-lg-5">
+      <!-- Pie Chart -->
+      <div class="border rounded-3 p-3 bg-white h-100 shadow-sm">
+        <div class="display-6 text-danger mt-3 ms-3 mb-5 pb-sm-5">Pie Chart Dummy</div>
+        <app-pie-chart></app-pie-chart>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="row mb-4">
+    <!-- Row 3 Left -->
+    <div class="col-12 col-lg-8">
+      <!-- Running Containers -->
+      <div class="border rounded-3 bg-white p-3 h-100">
+        <div class="display-6 text-primary my-4 pb-sm-3 ms-4">
+          Container Status
+        </div>
+        <app-stacked-bar-chart></app-stacked-bar-chart>
+        <div class="text-center lead mb-3">Top 10 Running Containers </div>
+      </div>
+    </div>
+
+    <!-- Row 3 Right -->
+    <div class="col-12 col-lg-4">
+      <!-- Timeline Analysis -->
+      <div class="border rounded-3 bg-white p-3 h-100">
+        <div class="text-center display-6 mt-4 text-secondary">Timeline</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="border rounded-3 bg-white table-responsive p-3">
+        <table class="table align-middle mb-0 bg-white">
+          <thead class="bg-light">
+            <tr>
+              <th>Name</th>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Position</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <img
+                      src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                      alt=""
+                      style="width: 45px; height: 45px"
+                      class="rounded-circle"
+                      />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">John Doe</p>
+                    <p class="text-muted mb-0">john.doe@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="fw-normal mb-1">Software engineer</p>
+                <p class="text-muted mb-0">IT department</p>
+              </td>
+              <td>
+                <span class="border p-2 rounded-pill text-white bg-success">Active</span>
+              </td>
+              <td>Senior</td>
+              <td>
+                <button type="button" class="btn btn-link btn-sm btn-rounded">
+                  Edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <img
+                      src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                      class="rounded-circle"
+                      alt=""
+                      style="width: 45px; height: 45px"
+                      />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Alex Ray</p>
+                    <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="fw-normal mb-1">Consultant</p>
+                <p class="text-muted mb-0">Finance</p>
+              </td>
+              <td>
+                <span class="border p-2 rounded-pill text-white bg-danger"
+                      >Onboarding</span
+                  >
+              </td>
+              <td>Junior</td>
+              <td>
+                <button
+                        type="button"
+                        class="btn btn-link btn-rounded btn-sm fw-bold"
+                        data-mdb-ripple-color="dark"
+                        >
+                  Edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <img
+                      src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                      class="rounded-circle"
+                      alt=""
+                      style="width: 45px; height: 45px"
+                      />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Kate Hunington</p>
+                    <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="fw-normal mb-1">Designer</p>
+                <p class="text-muted mb-0">UI/UX</p>
+              </td>
+              <td>
+                <span class="border p-2 rounded-pill text-white bg-warning">Awaiting</span>
+              </td>
+              <td>Senior</td>
+              <td>
+                <button
+                        type="button"
+                        class="btn btn-link btn-rounded btn-sm fw-bold"
+                        data-mdb-ripple-color="dark"
+                        >
+                  Edit
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>

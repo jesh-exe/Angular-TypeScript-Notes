@@ -1,0 +1,156 @@
+<div class="bg-light rounded border p-sm-5 py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 my-1 display-6 text-primary">User Reports</div>
+      <div class="col-12 col-sm-12 mt-3">
+        <div class="input-group mb-3">
+          <input style="max-width: 40%; min-width: 40%;" type="text"
+            class="form-control border-3 rounded-end rounded-pill" placeholder="Enter name">
+          <select name="" id="" class="form-select">
+            <option value="">Name</option>
+            <option value="">Username</option>
+          </select>
+          <input type="date" name="date" class=" form-control" placeholder="Select Date" id="date">
+          <button class="btn btn-success rounded-start rounded-pill">Show</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Icon Holder -->
+  <div class="p-2">
+    <!-- <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Details
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Charts
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="d-flex my-3 px-sm-2 flex-wrap" style="gap: 15px;">
+              <div [routerLink]="'storage'" class="border shadow-sm rounded-cirle  p-2 px-sm-4" role="button">
+                <img width="80" height="80" src="https://img.icons8.com/clouds/80/stack.png" alt="stack" />
+                <div class="lead text-center text-muted fs-6">Storage</div>
+              </div>
+              <div [routerLink]="'container'" class="border shadow-sm rounded-3 p-2 px-sm-4" role="button">
+                <img width="80" height="80"
+                  src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/96/external-Docker-social-media-those-icons-lineal-color-those-icons.png"
+                  alt="external-Docker-social-media-those-icons-lineal-color-those-icons" />
+                <div class="lead text-center text-muted fs-6">Containers</div>
+              </div>
+              <div [routerLink]="'time'" class="border shadow-sm rounded-3 p-2 px-sm-4" role="button">
+                <img width="80" height="80" src="https://img.icons8.com/nolan/96/delivery-time.png"
+                  alt="delivery-time" />
+                <div class="lead text-center text-muted fs-6">Time Spent</div>
+              </div>
+              <div [routerLink]="'activity'" class="border shadow-sm rounded-3 p-2 px-sm-4" role="button">
+                <img width="80" height="80" src="https://img.icons8.com/pulsar-gradient/96/activity.png"
+                  alt="activity" />
+                <div class="lead text-center text-muted fs-6">Activity
+                </div>
+              </div>
+            </div>
+            <div>
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+      <!-- Charts -->
+      <mat-tab label="Charts">
+        <div class="d-flex my-3 px-sm-2 flex-wrap" style="gap: 15px;">
+          <div [routerLink]="'storage'" class="border shadow-sm rounded-cirle  p-2 px-sm-4" role="button">
+            <img width="80" height="80" src="https://img.icons8.com/3d-fluency/94/database.png" alt="database"/>
+            <div class="lead text-center text-muted fs-6">Storage</div>
+          </div>
+          <div [routerLink]="'container'" class="border shadow-sm rounded-3 p-2 px-sm-4" role="button">
+            <img width="80" height="80"
+              src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/96/external-Docker-social-media-those-icons-lineal-color-those-icons.png"
+              alt="external-Docker-social-media-those-icons-lineal-color-those-icons" />
+            <div class="lead text-center text-muted fs-6">Containers</div>
+          </div>
+          <div [routerLink]="'time'" class="border shadow-sm rounded-3 p-2 px-sm-4" role="button">
+            <img width="80" height="80" src="https://img.icons8.com/nolan/96/delivery-time.png" alt="delivery-time" />
+            <div class="lead text-center text-muted fs-6">Time Spent</div>
+          </div>
+          <div [routerLink]="'activity'" class="border shadow-sm rounded-3 p-2 px-sm-4" role="button">
+            <img width="80" height="80" src="https://img.icons8.com/pulsar-gradient/96/activity.png" alt="activity" />
+            <div class="lead text-center text-muted fs-6">Activity
+            </div>
+          </div>
+        </div>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </mat-tab>
+      <!-- Details -->
+      <mat-tab label="Details">
+        <div class="container">
+          <div class="row my-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="p-1">
+                <div class="border rounded shadow-sm bg-light p-2 bg-cherry">
+                  <div class="pt-3 lead border-bottom pb-1">Files Shared</div>
+                  <div class="d-flex justify-content-between my-3">
+                    <div>Icon</div>
+                    <div>1243</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="p-1">
+                <div class="border rounded shadow-sm bg-light p-2 bg-blue-dark">
+                  <div class="pt-3 lead border-bottom pb-1">Storage</div>
+                  <div class="d-flex justify-content-between my-3">
+                    <div>Icon</div>
+                    <div>1243</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="p-1">
+                <div class="border rounded shadow-sm bg-light p-2 bg-orange-dark">
+                  <div class="pt-3 lead border-bottom pb-1">Pipelines</div>
+                  <div class="d-flex justify-content-between my-3">
+                    <div>Icon</div>
+                    <div>1243</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="p-1">
+                <div class="border rounded shadow-sm bg-light p-2 bg-green-dark">
+                  <div class="pt-3 lead border-bottom pb-1">Instances</div>
+                  <div class="d-flex justify-content-between my-3">
+                    <div>Icon</div>
+                    <div>1243</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

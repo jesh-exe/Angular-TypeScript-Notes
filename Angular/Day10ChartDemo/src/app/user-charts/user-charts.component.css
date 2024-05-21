@@ -1,0 +1,21 @@
+
+.bg-cherry {
+    background: linear-gradient(45deg, rgb(231, 180, 183), rgb(247, 76, 155)) !important;
+    color: #fff;
+}
+
+.bg-blue-dark {
+    background: linear-gradient(45deg, rgb(19, 221, 210), rgb(91, 126, 234)) !important;
+    color: #fff;
+}
+
+.bg-green-dark {
+    background: linear-gradient(45deg, #71e4da, #0aad49) !important;
+    color: #fff;
+}
+
+.bg-orange-dark {
+    background: linear-gradient(45deg, #ebc89e, #f09815) !important;
+    color: #fff;
+}
+

@@ -28,7 +28,7 @@ export class PieChartComponent implements OnInit {
         left: 'center'
       },
       tooltip: {
-        trigger: 'item'
+        trigger: 'item',
       },
       legend: {
         orient: 'horizontal',
